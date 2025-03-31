@@ -24,7 +24,14 @@ export default function Mission() {
         sequi voluptatibus. Molestias rerum reiciendis sit?
       </div>
 
-      <Image src={devMug} alt="Developer mug" />
+      <div className="w-[300px] mt-6">
+        <Image
+          src={devMug}
+          alt="Developer mug"
+          className="rounded-sm"
+          placeholder="blur"
+        />
+      </div>
 
       <Button />
     </main>

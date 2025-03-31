@@ -1,4 +1,6 @@
 import Button from "@/app/components/button";
+import Image from "next/image";
+import devMug from "@/public/images/dev-mug.jpg";
 
 export default function Mission() {
   return (
@@ -21,6 +23,8 @@ export default function Mission() {
         atque! Consequuntur, maiores nulla cumque amet nisi unde! Cum placeat
         sequi voluptatibus. Molestias rerum reiciendis sit?
       </div>
+
+      <Image src={devMug} alt="Developer mug" />
 
       <Button />
     </main>

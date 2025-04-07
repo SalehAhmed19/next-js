@@ -1,4 +1,5 @@
 import getAllPosts from "@/lib/getAllPosts";
+import Link from "next/link";
 
 export default async function Posts() {
   const posts = await getAllPosts();
@@ -12,7 +13,9 @@ export default async function Posts() {
         <div className="mt-6">
           <ul className="mt-6">
             {posts.map((post) => (
-              <li key={post.id}>{post.title}</li>
+              <li key={post.id}>
+                <Link href={`posts/${post.id}`}>{post.title}</Link>
+              </li>
             ))}
           </ul>
         </div>
